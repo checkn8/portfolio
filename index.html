@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<body>
+    <section class="hero">
+        <nav id="navbar"> 
+            <!-- <img class="logo" src="src/images/logo.png"> -->
+            <div class="logo"><a href="#hero">n8</a></div>
+            <ul>
+                <li> <a href="#about-me"> about me </a> </li>
+                <li> <a href="#about-me"> projects </a> </li>
+                <li><a href="#about-me"> connect </a>  </li>
+                <li> <a href="#about-me"> resume </a>  </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div id="hero" class="hero-area">
+                <div class="hero-text">
+                    <h1> <span id="typed-element-introduction"> </span> </h1>
+                    <p> <span id="typed-element"></span></p>
+                    <!-- <div class="button buttonCenter">
+                        <a href="#"> My Projects </a>
+                    </div> -->
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/nbudiardjo/" target="_blank" class="social-ind">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill=#ECEEE5 viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+    
+                        <a href="https://gmail.com" target="_blank" class="social-ind">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill=#ECEEE5 viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+                        </a>
+                        <a href="src/files/NBudiardjo Resume.pdf" target="_blank" class="social-ind">
+                            <svg width="50" height="50" fill=#ECEEE5 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 0h-20v24h14l6-6v-18zm-6 18h4.36l-4.36 4.385v-4.385zm-3 1h-8v1h8v-1zm0-3h-8v1h8v-1zm6-2v-1h-14v1h14zm-7.059-4.968c-1.147-.265-2.214-.497-1.697-1.473 1.573-2.97.417-4.559-1.244-4.559-1.694 0-2.821 1.65-1.244 4.559.532.982-.575 1.214-1.697 1.473-1.024.237-1.062.745-1.059 1.635l.001.333h7.997l.001-.323c.004-.896-.03-1.407-1.058-1.645zm7.059.968h-4v1h4v-1zm0-2v-1h-4v1h4zm0-4h-4v1h4v-1z"/></svg>
+                        </a>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>  
+    
+    
+    <section id="about-me" class="about-me">
+    <div class="container"> 
+        <div class="row1">
+            <div class="col1">
+                <h1> about me </h1>
+            </div>  
+        </div>
+    
+        <div class="row2"> 
+            <div class="col2-1">
+                <img class="about-me-pic" src="src/images/Personal Photo.jpg">
+            </div>
+            <div class="col2-2">
+                <p> I am a passionate 5th year mechanical engineering student @ ubc specializing in mechatronics with a desire to improve the lives of others through engineering. I love applying my multidisciplinary knowledge to design and prototyping products. My interests lie in mechanical and product design, robotics, manufacturing and implementing the integration of mechanical, electrical, and software into my designs. 
+                    <br><br>
+                    I am currently interning at <b><span class="colorful-tesla">Tesla </span></b>as a mechanical hardware design engineer, and have previously worked at TRIUMF as a mechanical design engineer, Ability Healthcare in product design and manufacturing, and the UBC MEMS Laboratory as a soft robotics researcher. </p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+
+
+
+    <script src="src/app.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#typed-element-introduction', {
+      strings: ["hey there! i'm nathaniel budiardjo^1000"],
+      onComplete: function(self) { self.cursor.remove() 
+        var typed = new Typed('#typed-element', {
+            strings: ['and i am a mechanical engineering student',  'and i am a mechanical and product designer', 'and i am a avid learner, creator and more! ^3000'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 2000,
+            loop: true,
+            smartBackspace: true,
+            startDelay: 0,
+    });},
+        typeSpeed: 60,
+        backSpeed: 25,
+        backDelay: 10,
+        loop: false,
+        smartBackspace: true,
+        startDelay: 0,
+    });
+
+    // var typed = new Typed('#typed-element', {
+    //   strings: ['and i am a mechanical engineering student', 'and i am specializing in mechatronics ', 'and i am an avid learner', 'and i am a robotics enthusiast', 'and i am a creator, and more!'],
+    //   typeSpeed: 50,
+    //   backSpeed: 25,
+    //   backDelay: 2000,
+    //   loop: true,
+    //   smartBackspace: true,
+    //   startDelay: 1000,
+    // });
+  </script>
+
+</body>
