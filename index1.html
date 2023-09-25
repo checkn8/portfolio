@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body> 
+    <section class = "hero">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src = "src/images/logo.png" class = "logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Connect</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-text">
+                    <h1> <span id="typed-element-introduction"> </span> </h1>
+                    <p> <span id="typed-element"></span></p>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+<!-------- about ----------->
+    <div id:"about">
+        <div class="container">
+            <div class="row">
+                <div class = "about-col-1">
+                    <img src = "src/images/Personal Photo.jpg" class = "picture">
+                </div>
+                <div class = "about-col-2">
+                    <h1>about me</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+    var typed = new Typed('#typed-element-introduction', {
+      strings: ["hey there! i'm nathaniel budiardjo^1000"],
+      onComplete: function(self) { self.cursor.remove() 
+        var typed = new Typed('#typed-element', {
+            strings: ['and i am a mechanical engineering student',  'and i am a mechanical and product designer', 'and i am a avid learner, creator and more! ^3000'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 2000,
+            loop: true,
+            smartBackspace: true,
+            startDelay: 0,
+    });},
+        typeSpeed: 60,
+        backSpeed: 25,
+        backDelay: 10,
+        loop: false,
+        smartBackspace: true,
+        startDelay: 0,
+    });
+  </script>
+</html>
